@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	
+	# Force https - uncomment these 2 lines if you want to have https be forced
+	RewriteCond %{HTTPS} off
+	RewriteRule (.*) https://%{SERVER_NAME}/$1 [L,R=301,NC]
+	
+	# Processing .ini files (these are conf files - restrict access)
+	RewriteRule ^(.*?)\.ini(.*?)$ https://%{SERVER_NAME}/ [L,R=301,NC]
+</IfModule>
