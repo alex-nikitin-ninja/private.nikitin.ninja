@@ -1,0 +1,9 @@
+/.htaccess
+
+/tmp/
+/vendor/*
+/composer.lock
+
+/bower_components/*
+/node_modules/*
+/.well-known/*

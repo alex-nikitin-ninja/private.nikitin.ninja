@@ -1,0 +1,17 @@
+{
+  "name": "private.nikitin.ninja",
+  "authors": [
+    "alex@nikitin.ninja"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "alex.nikitin.ninja",
+  "private": true,
+  "dependencies": {
+    "angular-animate": "^1.6.2",
+    "angular-strap": "^2.3.12",
+    "angular": "^1.6.2",
+    "bootstrap": "^3.3.7"
+  }
+}
