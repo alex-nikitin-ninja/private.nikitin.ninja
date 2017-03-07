@@ -2,6 +2,10 @@ var app = angular.module('app', ['ngRoute', 'ngAnimate', 'mgcrea.ngStrap']);
 
 app.config(function($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
+    // $locationProvider.html5Mode({
+    //     enabled: true,
+    //     requireBase: false
+    // });
     $routeProvider
         .when('/', {
             templateUrl: 'site/templates/body/index.html',
