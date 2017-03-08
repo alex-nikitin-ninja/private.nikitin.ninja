@@ -16,12 +16,23 @@ function listdirs($dir) {
 	return $alldirs;
 }
 
+$cssContent = '';
 $files = listdirs('..');
 foreach ($files as $k => $oneFile) {
 	$pathinfo = pathinfo($oneFile);
 	if( isset($pathinfo['extension']) && strtolower($pathinfo['extension'])=='css'){
-		echo file_get_contents($oneFile)."\n";
+		// echo file_get_contents($oneFile)."\n";
+		$cssContent .= file_get_contents($oneFile)."\n";
 	}
 }
+
+// Remove comments
+$cssContent = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $cssContent);
+// Remove space after colons
+$cssContent = str_replace(': ', ':', $cssContent);
+// Remove whitespace
+$cssContent = str_replace(array("\r", "\n", "\t", '  ', '    ', '    '), '', $cssContent);
+
+echo $cssContent;
 
 ?>

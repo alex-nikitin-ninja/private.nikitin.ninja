@@ -14,12 +14,14 @@ function listdirs($dir) {
 	return $alldirs;
 }
 
+$jsContent = '';
 $files = listdirs('..');
 foreach ($files as $k => $oneFile) {
 	$pathinfo = pathinfo($oneFile);
 	if( isset($pathinfo['extension']) && strtolower($pathinfo['extension'])=='js'){
-		echo file_get_contents($oneFile)."\n";
+		$jsContent .= file_get_contents($oneFile)."\n";
 	}
 }
 
+echo $jsContent;
 ?>
