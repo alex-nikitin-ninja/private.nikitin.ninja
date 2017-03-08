@@ -15,6 +15,10 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'site/templates/body/about.html',
             controller: 'aboutController'
         })
+        .when('/test/:number', {
+            templateUrl: 'site/templates/body/about.html',
+            controller: 'aboutController'
+        })
         .otherwise({
             redirectTo: '/'
         });

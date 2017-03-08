@@ -1,3 +1,4 @@
+Options +FollowSymLinks
 <IfModule mod_rewrite.c>
 	RewriteEngine on
 	
@@ -7,4 +8,9 @@
 	
 	# Processing .ini files (these are conf files - restrict access)
 	RewriteRule ^(.*?)\.ini(.*?)$ https://%{SERVER_NAME}/ [L,R=301,NC]
+
+	# Rewrite non-existing files
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ /#/$1 [NE,L,R=301,NC]
 </IfModule>
