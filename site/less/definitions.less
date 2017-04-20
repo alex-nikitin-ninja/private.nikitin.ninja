@@ -1,8 +1,55 @@
-// Base palette colors
-@base-color: #697e93;
-@base-color-dark: darken(@base-color, 10%);
-@base-color-light: lighten(@base-color, 10%);
+// Colors palette
+@gray: #8697a8;
+@blue: #5191de;
+@green: #68af20;
+@orange: #fad4a3;
+@brown: #e18b44;
 
-// Text colors
-@text-color-light: lighten(@base-color, 50%);
-@text-color-dark: darken(@base-color, 50%);
+// Main palette colors
+@bg-percent: 40%;
+@color: @gray;
+@bg-color: lighten(@color, @bg-percent);
+
+// Main shadow colors
+@shadow-percent: 10%;
+@dark: darken(@color, @shadow-percent);
+@light: lighten(@color, @shadow-percent);
+
+// Main text colors
+@text-percent: 35%;
+@text-dark: darken(@color, @text-percent);
+@text-light: lighten(@color, @text-percent);
+
+// Colored palette
+@bg-gray: lighten(@gray, @bg-percent);
+@bg-blue: lighten(@blue, @bg-percent);
+@bg-green: lighten(@green, @bg-percent);
+@bg-orange: lighten(@orange, @bg-percent);
+@bg-brown: lighten(@brown, @bg-percent);
+
+@text-dark-gray: darken(@gray, @text-percent);
+@text-dark-blue: darken(@blue, @text-percent);
+@text-dark-green: darken(@green, @text-percent);
+@text-dark-orange: darken(@orange, @text-percent);
+@text-dark-brown: darken(@brown, @text-percent);
+
+@text-light-gray: lighten(@gray, @text-percent);
+@text-light-blue: lighten(@blue, @text-percent);
+@text-light-green: lighten(@green, @text-percent);
+@text-light-orange: lighten(@orange, @text-percent);
+@text-light-brown: lighten(@brown, @text-percent);
+
+@dark-gray: darken(@gray, @shadow-percent);
+@dark-blue: darken(@blue, @shadow-percent);
+@dark-green: darken(@green, @shadow-percent);
+@dark-orange: darken(@orange, @shadow-percent);
+@dark-brown: darken(@brown, @shadow-percent);
+
+@light-gray: lighten(@gray, @shadow-percent);
+@light-blue: lighten(@blue, @shadow-percent);
+@light-green: lighten(@green, @shadow-percent);
+@light-orange: lighten(@orange, @shadow-percent);
+@light-brown: lighten(@brown, @shadow-percent);
+
+// Main layout variables
+

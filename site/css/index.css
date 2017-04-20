@@ -1,12 +1,28 @@
+* {
+  font-size: 12px;
+}
+body,
+html {
+  background-color: #fdfdfd;
+  color: #343e48;
+}
 .ns-page-header {
-  background-color: #697e93;
-  color: #fdfefe;
+  background-color: #697d92;
+  color: #eef0f3;
   height: 50px;
   line-height: 50px;
+  margin: 0;
+  padding: 0 20px;
+}
+.ns-page-body {
+  margin: 0;
+  padding: 0 20px;
 }
 .ns-page-footer {
-  background-color: #546475;
-  color: #fdfefe;
+  background-color: #697d92;
+  color: #eef0f3;
   height: 50px;
   line-height: 50px;
+  margin: 0;
+  padding: 0 20px;
 }
