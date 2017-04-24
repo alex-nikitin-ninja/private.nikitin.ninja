@@ -1,22 +1,59 @@
 * {
   font-size: 12px;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 body,
 html {
   background-color: #fdfdfd;
   color: #343e48;
 }
+.ns-content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.clear {
+  clear: both;
+}
 .ns-page-header {
   background-color: #697d92;
   color: #eef0f3;
-  height: 50px;
-  line-height: 50px;
+  height: 80px;
   margin: 0;
   padding: 0 20px;
+  position: relative;
+  line-height: 1;
+}
+.ns-page-header .ns-content {
+  position: absolute;
+  height: 50px;
+  margin: auto;
+}
+.ns-page-header .ns-content .logo-container {
+  position: relative;
+  margin-top: 2px;
+}
+.ns-page-header .ns-content .logo-container .main-caption {
+  width: 100%;
+  font-size: 22px;
+  height: 26px;
+}
+.ns-page-header .ns-content .logo-container .sub-caption {
+  width: 100%;
+  font-size: 16px;
+  height: 20px;
+  overflow: hidden;
 }
 .ns-page-body {
   margin: 0;
-  padding: 0 20px;
+  padding: 20px;
+}
+.ns-page-body .ns-content {
+  background-color: #ddf;
 }
 .ns-page-footer {
   background-color: #697d92;
@@ -25,4 +62,5 @@ html {
   line-height: 50px;
   margin: 0;
   padding: 0 20px;
+  position: relative;
 }

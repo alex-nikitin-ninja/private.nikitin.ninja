@@ -1,8 +1,29 @@
 .ns-page-header {
     background-color: @dark;
     color: @text-light;
-    height: 50px;
-    line-height: 50px;
+    height: 80px;
     margin: 0;
     padding: 0 20px;
+    position: relative;
+    line-height: 1;
+    .ns-content {
+        position: absolute;
+        height: 50px;
+        margin: auto;
+        .logo-container {
+            position: relative;
+            margin-top: 2px;
+            .main-caption {
+                width: 100%;
+                font-size: 22px;
+                height: 26px;
+            }
+            .sub-caption {
+                width: 100%;
+                font-size: 16px;
+                height: 20px;
+                overflow: hidden;
+            }
+        }
+    }
 }
