@@ -4,9 +4,9 @@ app.config(function($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
     // not supported by any of browsers fully yet
     // $locationProvider.html5Mode({
-    //     enabled: true,
-    //     requireBase: false
-    // });
+    //      enabled: true,
+    //      requireBase: false
+    //  });
     $routeProvider
         .when('/', {
             templateUrl: 'site/templates/body/index.html',
@@ -17,12 +17,12 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: 'site/templates/body/about.html',
             controller: 'aboutController'
         })
-        
+
         .when('/test/:number', {
             templateUrl: 'site/templates/body/about.html',
             controller: 'aboutController'
         })
-        
+
         .otherwise({
             redirectTo: '/'
         });

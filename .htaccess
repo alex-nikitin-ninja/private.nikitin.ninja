@@ -9,9 +9,9 @@
 	RewriteRule ^(.*?)\.ini(.*?)$ https://%{SERVER_NAME}/ [L,R=301,NC]
 
 	# Rewrite non-existing files
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^(.*)$ /#/$1 [NE,L,R=301,NC]
+	# RewriteCond %{REQUEST_FILENAME} !-f
+	# RewriteCond %{REQUEST_FILENAME} !-d
+	# RewriteRule ^(.*)$ /#/$1 [NE,L,R=301,NC]
 </IfModule>
 
 <ifmodule mod_expires.c>
