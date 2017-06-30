@@ -28,12 +28,20 @@ html {
   width: 250px;
   font-size: 16px;
 }
+.ns-left-menu .ns-menu-me {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.ns-left-menu .ns-menu-single {
+  margin: 10px 0;
+  padding: 0 10px;
+}
 .ns-page-body {
   position: fixed;
-  left: 250px;
   top: 5px;
   right: 0;
   bottom: 5px;
+  left: 250px;
 }
 .ns-page-footer {
   background-color: #697d92;
