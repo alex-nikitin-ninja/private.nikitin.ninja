@@ -1,31 +1,30 @@
-<div class="ns-left-menu">
-    
-    <div class="ns-menu-me">
-        ns-menu-me
+<div ng-controller="leftMenuController" ng-class="{ 'menu-hidden': !userDefinitions.isLoggedIn }" class="ns-left-menu">
+    <div class="menu-container">
+        <!-- <pre>{{ userDefinitions.isLoggedIn | json }}</pre> -->
+        <div class="ns-menu-me">
+            ns-menu-me
+        </div>
+        <div class="ns-menu-single-menu">
+            <div class="ns-menu-single-menu-item">
+                ns-menu-single-menu-item-1
+            </div>
+            <div class="ns-menu-single-menu-item">
+                ns-menu-single-menu-item-2
+            </div>
+            <div class="ns-menu-single-menu-item">
+                ns-menu-single-menu-item-3
+            </div>
+        </div>
+        <div class="ns-menu-single-menu">
+            <div class="ns-menu-single-menu-item">
+                ns-menu-single-menu-item-1
+            </div>
+            <div class="ns-menu-single-menu-item">
+                ns-menu-single-menu-item-2
+            </div>
+            <div class="ns-menu-single-menu-item">
+                ns-menu-single-menu-item-3
+            </div>
+        </div>
     </div>
-    
-    <div class="ns-menu-single-menu">
-        <div class="ns-menu-single-menu-item">
-            ns-menu-single-menu-item-1
-        </div>
-        <div class="ns-menu-single-menu-item">
-            ns-menu-single-menu-item-2
-        </div>
-        <div class="ns-menu-single-menu-item">
-            ns-menu-single-menu-item-3
-        </div>
-    </div>
-    
-    <div class="ns-menu-single-menu">
-        <div class="ns-menu-single-menu-item">
-            ns-menu-single-menu-item-1
-        </div>
-        <div class="ns-menu-single-menu-item">
-            ns-menu-single-menu-item-2
-        </div>
-        <div class="ns-menu-single-menu-item">
-            ns-menu-single-menu-item-3
-        </div>
-    </div>
-
 </div>
