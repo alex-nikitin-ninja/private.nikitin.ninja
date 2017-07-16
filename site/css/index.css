@@ -80,12 +80,13 @@ html {
 .ns-login-screen {
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 40%;
   right: 0;
-  bottom: 70%;
+  bottom: 60%;
   margin: auto;
   width: 300px;
-  height: 150px;
+  height: 165px;
+  overflow: hidden;
 }
 .ns-page-footer {
   background-color: #697d92;
