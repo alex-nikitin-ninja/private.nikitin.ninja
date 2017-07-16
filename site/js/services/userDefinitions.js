@@ -1,5 +1,6 @@
-app.factory('$$userDefinitions', function($timeout) {
-	console.log('$$userDefinitions worked...');
+app.factory('$$userDefinitions', function($location, $timeout) {
+    // console.log('$$userDefinitions worked...');
+	// console.log($location);
 	
     var userDefinitions = {};
     
@@ -14,7 +15,7 @@ app.factory('$$userDefinitions', function($timeout) {
     userDefinitions.name = '';
 
     userDefinitions.init = function() {
-
+        // $location.url('/index');
     };
     userDefinitions.init();
 	

@@ -8,14 +8,14 @@ app.config(function($routeProvider, $locationProvider) {
     //      requireBase: false
     //  });
     $routeProvider
-        .when('/', {
-            templateUrl: 'site/templates/body/index.html',
-            controller: 'indexController'
-        })
-
         .when('/about', {
             templateUrl: 'site/templates/body/about.html',
             controller: 'aboutController'
+        })
+
+        .when('/login', {
+            templateUrl: 'site/templates/body/login.html',
+            controller: 'loginController'
         })
 
         .when('/test/:number', {
@@ -23,7 +23,13 @@ app.config(function($routeProvider, $locationProvider) {
             controller: 'aboutController'
         })
 
+        .when('/index', {
+            templateUrl: 'site/templates/body/index.html',
+            controller: 'indexController'
+        })
+
         .otherwise({
-            redirectTo: '/'
+            redirectTo: '/login'
         });
 });
+

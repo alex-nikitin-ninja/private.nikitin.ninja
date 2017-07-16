@@ -73,10 +73,19 @@ html {
   bottom: 5px;
   left: 250px;
   transition: left 300ms ease;
-  background-color: #ddf;
 }
 .ns-page-body.menu-hidden {
   left: 5px;
+}
+.ns-login-screen {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  right: 0;
+  bottom: 70%;
+  margin: auto;
+  width: 300px;
+  height: 150px;
 }
 .ns-page-footer {
   background-color: #697d92;
