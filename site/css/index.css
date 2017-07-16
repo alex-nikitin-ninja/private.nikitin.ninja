@@ -58,13 +58,22 @@ html {
 .ns-left-menu.menu-hidden .menu-container {
   opacity: 0;
 }
+.ns-right-menu {
+  background-color: #697d92;
+  position: fixed;
+  right: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 5px;
+}
 .ns-page-body {
   position: fixed;
   top: 5px;
-  right: 0;
+  right: 5px;
   bottom: 5px;
   left: 250px;
   transition: left 300ms ease;
+  background-color: #ddf;
 }
 .ns-page-body.menu-hidden {
   left: 5px;
