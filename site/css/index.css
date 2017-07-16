@@ -29,12 +29,20 @@ html {
   font-size: 16px;
 }
 .ns-left-menu .ns-menu-me {
-  margin: 10px 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
   padding: 0 10px;
+  background-color: #5191de;
 }
-.ns-left-menu .ns-menu-single {
-  margin: 10px 0;
-  padding: 0 10px;
+.ns-left-menu .ns-menu-single-menu {
+  margin-top: 10px;
+  padding: 0px 10px 0px 5px;
+}
+.ns-left-menu .ns-menu-single-menu .ns-menu-single-menu-item {
+  background-color: #8697a8;
+  padding: 1px 2px 1px 5px;
+  margin: 5px 0;
+  border-radius: 0 5px 5px 0;
 }
 .ns-page-body {
   position: fixed;
