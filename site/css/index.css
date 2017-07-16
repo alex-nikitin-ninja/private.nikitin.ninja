@@ -64,6 +64,10 @@ html {
   right: 0;
   bottom: 5px;
   left: 250px;
+  transition: left 300ms ease;
+}
+.ns-page-body.menu-hidden {
+  left: 5px;
 }
 .ns-page-footer {
   background-color: #697d92;

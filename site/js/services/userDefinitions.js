@@ -5,21 +5,18 @@ app.factory('$$userDefinitions', function($timeout) {
     
     userDefinitions.isLoggedIn = false;
 
-    $timeout(function(){
-        userDefinitions.isLoggedIn = true;
-    }, 2500);
+    // $timeout(function(){
+    //     userDefinitions.isLoggedIn = true;
+    // }, 2500);
 
 
     userDefinitions.id = '';
     userDefinitions.name = '';
 
-    // userDefinitions.init = function() {
-    // });
-	
-    // userDefinitions.getName = function() {
-    //     console.log('userDefinitions.getName worked...');
-    //     return userDefinitions.name;
-    // }
+    userDefinitions.init = function() {
 
+    };
+    userDefinitions.init();
+	
     return userDefinitions;
 });
