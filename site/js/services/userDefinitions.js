@@ -1,9 +1,9 @@
 app.factory('$$userDefinitions', function($location, $timeout) {
     // console.log('$$userDefinitions worked...');
-	// console.log($location);
-	
+    // console.log($location);
+
     var userDefinitions = {};
-    
+
     userDefinitions.isLoggedIn = false;
 
     // $timeout(function(){
@@ -18,6 +18,11 @@ app.factory('$$userDefinitions', function($location, $timeout) {
         // $location.url('/index');
     };
     userDefinitions.init();
-	
+
+    userDefinitions.login = function() {
+        userDefinitions.isLoggedIn = true;
+        $location.url('/index');
+    };
+
     return userDefinitions;
 });
