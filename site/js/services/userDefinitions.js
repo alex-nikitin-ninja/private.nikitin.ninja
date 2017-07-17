@@ -1,28 +1,47 @@
 app.factory('$$userDefinitions', function($location, $timeout) {
-    // console.log('$$userDefinitions worked...');
-    // console.log($location);
-
-    var userDefinitions = {};
-
-    userDefinitions.isLoggedIn = false;
-
-    // $timeout(function(){
-    //     userDefinitions.isLoggedIn = true;
-    // }, 2500);
-
-
-    userDefinitions.id = '';
-    userDefinitions.name = '';
-
-    userDefinitions.init = function() {
-        // $location.url('/index');
+    var userDefinitions = {
+        details: false,
+        isLoggedIn: false,
     };
-    userDefinitions.init();
 
     userDefinitions.login = function() {
-        userDefinitions.isLoggedIn = true;
-        $location.url('/index');
+
+
+
+
+        userDefinitions.details = {
+            id: '',
+            name: '',
+        };
+        localStorage.userDefinitionsDetails = JSON.stringify(userDefinitions.details);
+
+        userDefinitions.init();
     };
+
+    userDefinitions.logout = function() {
+        delete localStorage.userDefinitionsDetails;
+        $location.url('/login');
+    };
+    // userDefinitions.logout();
+
+    userDefinitions.checkLocal = function() {
+        if (void 0 !== localStorage.userDefinitionsDetails) {
+            userDefinitions.details = JSON.parse(localStorage.userDefinitionsDetails);
+            userDefinitions.isLoggedIn = true;
+        }
+    };
+
+    userDefinitions.init = function() {
+        userDefinitions.checkLocal();
+        if (userDefinitions.isLoggedIn === true) {
+            
+            $location.url('/index');
+
+        } else {
+            $location.url('/login');
+        }
+    };
+    userDefinitions.init();
 
     return userDefinitions;
 });
