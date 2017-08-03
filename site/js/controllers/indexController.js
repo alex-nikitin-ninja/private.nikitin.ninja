@@ -3,5 +3,7 @@ app.controller('indexController', function($scope, $$userDefinitions) {
     
     $scope.userDefinitions = $$userDefinitions;
 
-    // console.log(userDefinitions.getName());
+    // $scope.userDefinitions.logout();
+
+    // console.log($scope.userDefinitions.getName());
 });
